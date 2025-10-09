@@ -87,25 +87,58 @@ int ft_strj_sizetomalloc(char **strs)
 	return(ij);
 }
 
-
-char *ft_strjoin(int size, char **strs, char *sep)
+char *ft_copy_strjoin(int size, char **strs, char *sep, char *str)
 {
-	int i;
-	int j;
-	
-	while(strs[i][j])
+	int i = 1;
+	int j = 0;
+	int k = 0;
+	int s = 0;
+
+	while(i <= size)
 	{
-		while (strs[i][j])
+		while(strs[i][j] != '\0')
+		{
+			str[k] = strs[i][j];
 			j++;
+			k++;
+		}
+		while(sep[s] != '\0' && (i < size))
+		{
+			str[k] = sep[s];
+			k++;
+			s++;
+		}
+		s = 0;
 		j = 0;
 		i++;
 	}
-	
+	return(str);
 }
+
+char *ft_strjoin(int size, char **strs, char *sep)
+{
+	int i = 0;
+	int len = 0;
+	char *str;
 	
+	if (size == 0)
+	{
+		str = malloc(1);
+		str[0] = '\0';
+		return (str);
+	}
+	while (i < size)
+	{
+		len = len + ft_strlen(strs[i]);
+		i++;
+	}
+	len = len + ft_strlen(sep) * (size - 1);
+	str = malloc((sizeof(char) * len) + 1);
+	ft_copy_strjoin(size, strs, sep, str);
+	return (str);
+}
 
 (
-strjoin
 split
 atoi
 itoa

@@ -6,7 +6,7 @@
 /*   By: fabiochaput <fabiochaput@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 14:51:24 by fabiochaput       #+#    #+#             */
-/*   Updated: 2025/10/08 14:27:47 by fabiochaput      ###   ########.fr       */
+/*   Updated: 2025/10/10 00:42:19 by fabiochaput      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,30 +47,16 @@ int ft_strlen(char *str)
     return(i);
 }
 
-int ft_strj_sizetomalloc(char **strs)
-{
-	int i;
-	int j;
-	int ij;
 
-	while(strs[i+1][j])
-	{
-		while (strs[i+1][j])
-			j++;
-		j = 0;
-		i++;
-	}
-	ij = i + j;
-	return(ij);
-}
 
 int main(int argc, char *argv[])
 {
 	char dest[50] = "dest";
     char c = 'e';
     int i;
-	int *range;
-	i = ft_strj_sizetomalloc(argv);
-	ft_putnbr(i);
+	char *range;
+	ft_putnbr(argc - 1);
+	range = ft_strjoin(argc - 1, argv, ", ");
+	printf("%s\n", range);
     return 0;
 }

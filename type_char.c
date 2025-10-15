@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_char.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fabiochaput <fabiochaput@student.42.fr>    +#+  +:+       +#+        */
+/*   By: clementchaput <clementchaput@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:00:04 by fabiochaput       #+#    #+#             */
-/*   Updated: 2025/10/06 15:31:18 by fabiochaput      ###   ########.fr       */
+/*   Updated: 2025/10/15 18:26:47 by clementchap      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

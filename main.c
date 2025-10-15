@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fabiochaput <fabiochaput@student.42.fr>    +#+  +:+       +#+        */
+/*   By: clementchaput <clementchaput@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 14:51:24 by fabiochaput       #+#    #+#             */
-/*   Updated: 2025/10/10 00:42:19 by fabiochaput      ###   ########.fr       */
+/*   Updated: 2025/10/15 18:26:31 by clementchap      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

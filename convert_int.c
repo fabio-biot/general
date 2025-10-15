@@ -137,9 +137,3 @@ char *ft_strjoin(int size, char **strs, char *sep)
 	ft_copy_strjoin(size, strs, sep, str);
 	return (str);
 }
-
-(
-split
-atoi
-itoa
-)
